@@ -318,7 +318,12 @@ background: #be2edd;
 .h-140px, .size-140px {
     height: 140px!important;
 }
-
+@media (max-width: 992px){
+    .goToTop{
+        bottom: 70px!important;
+        right: 5px!important;
+    }
+}
 @media (min-width: 1200px){
     .d-xl-block {
         display: block!important;
@@ -334,6 +339,7 @@ background: #be2edd;
     .h-md-210px, .size-md-210px {
         height: 210px!important;
     }
+    
 }
 @media (min-width: 992px){
     .lg-no-gutters {
@@ -466,10 +472,10 @@ a, button, input, textarea, .btn, .has-transition {
 .owl-theme .owl-dots .owl-dot span {
     width: 20px!important;
     height: 4px!important;
-    background: #8e44ad!important;
+    background: #fff!important;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #bc9cca!important;
+    background: #8e44ad!important;
 }
 .tooltip-inner {
     color: #fff;
@@ -480,4 +486,28 @@ a, button, input, textarea, .btn, .has-transition {
 }
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
     border-left-color: #8e44ad!important;
+}
+.goToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 4000;
+    cursor: pointer;
+    background: #8e44ad;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.goToTop:hover{
+	background: #fff;
+	border-color: #8e44ad;
+	color: #8e44ad;
+	transition: 0.3s ease-in-out;
 }
