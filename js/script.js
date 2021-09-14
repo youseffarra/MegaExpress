@@ -59,7 +59,12 @@ $( document ).ready(function() {
 
 
 
-
+    $(window).scroll(function () {
+		$(this).scrollTop() > 600 ? $('#goToTop').fadeIn() : $('#goToTop').fadeOut();
+	}),
+		$('#goToTop').click(function () {
+			return $('html, body').animate({ scrollTop: 0 }, 500), !1;
+    });
 
 
     $(function () {
