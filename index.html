@@ -154,9 +154,69 @@
                         <span class="counter counter-floating counter-sm">0</span>
                         <span class="ml-n1 text-grey fw-600 d-lg-none d-xl-inline-block">المفضلة</span>
                         
-                        <a type="button" role="button" class="btn-floating btn-sm btn-light">
+                        <a href="javascript:void(0)" type="button" role="button" class="btn-floating btn-sm btn-light" data-toggle="dropdown" data-display="static" aria-expanded="false">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
+                        <div class="dropdown-menu dropdown-menu-left dropdown-menu-lg p-0 stop-propagation">
+                            <div class="p-3 fs-15 fw-700 p-3 border-bottom">
+                                عناصر السلة
+                            </div>
+                            <ul class="h-250px overflow-auto c-scrollbar-light list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <span class="d-flex align-items-center">
+                                        <a href="" class="text-reset d-flex align-items-center flex-grow-1">
+                                            <img src="https://ajeebghareeb.com/uploads/all/nflL9AmijTXEmRFCNdeWjG6aE22p94k4Z5CzsfTk.webp" data-src="https://ajeebghareeb.com/uploads/all/nflL9AmijTXEmRFCNdeWjG6aE22p94k4Z5CzsfTk.webp" class="img-fit size-60px rounded lazyloaded" alt="ساعة ذكية بسوار مطاطي متوافقة تعمل عن طريق البلوتوث كاميرا وتدعم شريحة اتصال - ابيض">
+                                                <span class="minw-0 pl-2 flex-grow-1">
+                                                <span class="fw-600 mb-1 text-truncate-2">
+                                                 ساعة ذكية بسوار مطاطي متوافقة تعمل عن طريق البلوتوث كاميرا وتدعم شريحة اتصال - ابيض                                         </span>
+                                                <span class="">1x</span>
+                                                <span class="">65 ر.س</span>
+                                            </span>
+                                        </a>
+                                        <span class="">
+                                            <button onclick="removeFromCart(0)" class="btn btn-sm btn-icon stop-propagation">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="d-flex align-items-center">
+                                        <a href="" class="text-reset d-flex align-items-center flex-grow-1">
+                                            <img src="https://ajeebghareeb.com/uploads/all/nflL9AmijTXEmRFCNdeWjG6aE22p94k4Z5CzsfTk.webp" data-src="https://ajeebghareeb.com/uploads/all/nflL9AmijTXEmRFCNdeWjG6aE22p94k4Z5CzsfTk.webp" class="img-fit size-60px rounded lazyloaded" alt="ساعة ذكية بسوار مطاطي متوافقة تعمل عن طريق البلوتوث كاميرا وتدعم شريحة اتصال - ابيض">
+                                                <span class="minw-0 pl-2 flex-grow-1">
+                                                <span class="fw-600 mb-1 text-truncate-2">
+                                                 ساعة ذكية بسوار مطاطي متوافقة تعمل عن طريق البلوتوث كاميرا وتدعم شريحة اتصال - ابيض                                         </span>
+                                                <span class="">1x</span>
+                                                <span class="">65 ر.س</span>
+                                            </span>
+                                        </a>
+                                        <span class="">
+                                            <button onclick="removeFromCart(0)" class="btn btn-sm btn-icon stop-propagation">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="px-3 py-2 fs-15 border-top d-flex justify-content-between">
+                                <span class="fw-700">الاجمالي</span>
+                                <span class="fw-700">130 ر.س</span>
+                            </div>
+                            <div class="px-3 py-2 text-center border-top">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn text-white bg-purple btn-sm">
+                                            اتمام الدفع
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="text-center p-3">
+                                <i class="far fa-frown mb-3" style="font-size: 26px;"></i>
+                                <h3 class="h6 fw-700">السلة فارغة</h3>
+                            </div> -->
+                        </div>
                         <span class="counter counter-floating counter-sm">0</span>
                         <span class="ml-n1 text-grey fw-600 d-lg-none d-xl-inline-block">السلة</span>
 
@@ -353,7 +413,7 @@
                                                         <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المقارنة">
                                                         <i class="fas fa-sync"></i>
                                                     </a>
-                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة">
+                                                        <a href="" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة">
                                                         <i class="fas fa-shopping-cart"></i>
                                                     </a>
                                                 </div>                                            
@@ -724,7 +784,7 @@
                                 <form class="form-inline" method="POST" action="">
                                     <div class="input-group mb-0">
                                         <input type="text" name="" id="" class="form-control b-radius-r" placeholder="البريد الإلكتروني">
-                                        <div class="input-group-append">
+                                        <div class="input-group-append mb-3">
                                             <button type="submit" class="btn bg-purple text-white b-radius-l">اشترك</button>
                                         </div>
                                     </div>
@@ -796,6 +856,25 @@
                 </a>
             </div>
         </div>
+
+
+        <div class="modal fade" id="addToCart">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size" role="document">
+                <div class="modal-content position-relative">
+                    <div class="c-preloader text-center p-3">
+                        <i class="las la-spinner la-spin la-3x"></i>
+                    </div>
+                    <button type="button" class="close absolute-top-right btn-icon close z-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la-2x">&times;</span>
+                    </button>
+                    <div id="addToCart-modal-body">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <i id="goToTop" class="fas fa-angle-up goToTop"></i>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
