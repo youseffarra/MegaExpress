@@ -49,8 +49,13 @@ $( document ).ready(function() {
 
 
     $('.menuButO').click(function() {
-        $('.sidenav').css({"width": "70%", "height": "100%"});
+        // $('.sidenav').css({"width": "70%", "height": "100%"});
         $('.sidenav').removeClass('d-none');
+        $('.sidenav').animate({
+            height: '100%',
+            width: '70%'
+        });
+        
     });
     $('.menuCloseBut').click(function() {
         $('.sidenav').css({"width": "0", "height": "0"});
@@ -70,5 +75,17 @@ $( document ).ready(function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
+
+
+
+    
+
+
+
+
+
+
+
+
 
     });
