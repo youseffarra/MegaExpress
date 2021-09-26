@@ -9,7 +9,7 @@ a{
 
 .list-inline-item a{
     text-decoration: none;
-    color: rgb(104, 100, 100);
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
 }
@@ -27,6 +27,9 @@ a{
 }
 .txt-purple{
     color: #8e44ad!important;
+}
+.txt-grey{
+    color: #9e9e9e!important;
 }
 .form-control:focus{
     color: #000;
@@ -164,17 +167,20 @@ a.waves-effect, a.waves-light {
 }
 .counter-bottom-nav {
     position: relative;
-    top: -10px;
-    left: 42px;
+    top: -12px;
+    left: 50px;
     z-index: 2;
     padding: 0px 7px;
     margin-left: -23px;
     font-size: 10px;
     color: #fff;
-    background-color: #8e44ad;
+    background-color: #fff;
     border-radius: 10em;
     -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    color: #8e44ad;
+    font-weight: 700;
+    border: 1px solid #8e44ad;
 }
 .bottom-nav p {
     font-weight: 600;
@@ -183,6 +189,7 @@ a.waves-effect, a.waves-light {
 }
 .bottom-nav i{
     color: rgb(104, 100, 100);
+    font-size: 18px;
 }
 .gutters-5 {
     margin-right: -5px;
@@ -247,8 +254,7 @@ a.waves-effect, a.waves-light {
 .img-slider .owl-dots{
     position: absolute;
     bottom: 5px;
-    right: 130px;
-    left: 130px;
+    width: 100%;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: #869791;
@@ -442,8 +448,9 @@ a, button, input, textarea, .btn, .has-transition {
 }
 .sidenav {
     position: fixed;
-    z-index: 2050;
+    z-index: 4100;
     padding-top: 15px;
+    border-left: 2px solid #8e44ad!important;
 }
 .menuCloseBut {
     position: relative;
@@ -486,6 +493,9 @@ a, button, input, textarea, .btn, .has-transition {
 }
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
     border-left-color: #8e44ad!important;
+}
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #8e44ad!important;
 }
 .goToTop {
     display: none;
@@ -542,4 +552,31 @@ a, button, input, textarea, .btn, .has-transition {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+.icon-rounded{
+    background: #8e44ad;
+    color: #fff!important;
+    border-radius: 50%;
+    height: 30px;
+    line-height: 30px!important;
+    width: 30px;
+    text-align: center;
+}
+.icon-rounded-b-nav {
+    background: #8e44ad;
+    color: #fff!important;
+    border-radius: 50%;
+    height: 35px;
+    line-height: 35px!important;
+    width: 35px;
+    text-align: center;
+}
+.border-width-2{
+    border-width: 2px!important;
+}
+.modal-header .close {
+    margin: -1rem -1rem -1rem -1rem!important;
+}
+.modal-title {
+    margin: 0 auto!important;
 }
