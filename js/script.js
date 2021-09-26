@@ -26,7 +26,9 @@ $( document ).ready(function() {
         nav:true,
         items: 5,
         dots: false,
-
+        autoplay: true,
+        autoplayHoverPause:true,
+        autoplayTimeout: 3000,
         responsive : {
             // breakpoint from 0 up
             0 : {
@@ -78,13 +80,15 @@ $( document ).ready(function() {
 
 
 
+    $('.stop-propagation').on('click', function(event){
+        event.stopPropagation();
+    });
+
+
+
+
+
     
-
-
-
-
-
-
 
 
 
