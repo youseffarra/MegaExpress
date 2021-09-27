@@ -283,9 +283,10 @@ a.waves-effect, a.waves-light {
 .fs-15{
     font-size: 15px!important;
 }
-.fs-16{
-    font-size: 1rem!important;
+.fs-18{
+    font-size: 18px!important;
 }
+
 .opacity-70 {
     opacity: 0.7 !important;
 }
@@ -579,4 +580,21 @@ a, button, input, textarea, .btn, .has-transition {
 }
 .modal-title {
     margin: 0 auto!important;
+}
+input[type="number"]{
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
