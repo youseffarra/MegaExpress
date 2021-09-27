@@ -13,7 +13,7 @@
 
     var _options = null;
     var DEFAULT_OPTIONS = {
-      currencySymbol: '$',
+      currencySymbol: 'ل.س',
       classCartIcon: 'my-cart-icon',
       classCartBadge: 'my-cart-badge',
       classProductQuantity: 'my-product-quantity',
@@ -251,7 +251,7 @@
           '<td class="text-center" style="width: 30px;"><img class="rounded" width="30px" height="30px" src="' + this.image + '"/></td>' +
           '<td>' + this.name + '</td>' +
           '<td title="السعر" class="text-right">' + options.currencySymbol + MathHelper.getRoundedNumber(this.price) + '</td>' +
-          '<td title="الكمية"><input class="form-control" type="number" min="1" style="width: 70px;" class="' + classProductQuantity + '" value="' + this.quantity + '"/></td>' +
+          '<td title="الكمية"><input type="number" min="1" style="width: 70px;" class="' + classProductQuantity + '" value="' + this.quantity + '"/></td>' +
           '<td title="المجموع" class="text-right ' + classProductTotal + '">' + options.currencySymbol + MathHelper.getRoundedNumber(total) + '</td>' +
           '<td title="إزالة من السلة" class="text-center" style="width: 30px;"><a href="javascript:void(0);" class="' + classProductRemove + '"><i class="fas fa-times txt-grey"></i></a></td>' +
           '</tr>'
@@ -267,7 +267,7 @@
         '<td class="text-right"><strong id="' + idGrandTotal + '"></strong></td>' +
         '<td></td>' +
         '</tr>' :
-        '<div class="alert alert-danger text-right" role="alert" id="' + idEmptyCartMessage + '">عذراً السلة فارغة.</div>'
+        '<div class="alert alert-danger text-right" role="alert" id="' + idEmptyCartMessage + '">لا يوجد عناصر في السلة. <i class="far fa-frown-open"></i></div>'
       );
 
       var discountPrice = options.getDiscountPrice(products, ProductManager.getTotalPrice(), ProductManager.getTotalQuantity());
