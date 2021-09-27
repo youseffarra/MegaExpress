@@ -234,7 +234,7 @@
                     <div class="col-lg-3 position-static d-none d-lg-block">
                         <div class="bg-white rounded shadow-sm">
                             <div class="p-3 bg-white border border-purple d-none d-lg-block rounded-top all-category position-relative text-right">
-                                <span class="fw-600 fs-16 mr-3 txt-purple">الاقسام</span>
+                                <span class="fw-700 fs-18 mr-3 txt-purple">الاقسام</span>
                                 <a href="#" class="text-reset">
                                     <span class="d-none d-lg-inline-block mr-3 txt-purple">عرض الكل <i class="fas fa-angle-left"></i></span>
                                 </a>
@@ -327,8 +327,8 @@
                     </div>
                     <!--side menu left-->
                     <div class="col-lg-2 d-none d-lg-block">
-                        <div class="p-3 bg-white border border-purple d-none d-lg-block rounded-top position-relative text-right">
-                            <span class="fw-600 fs-16 mr-3 txt-purple rounded-top">عروض اليوم</span>
+                        <div class="p-3 bg-white border border-purple d-none d-lg-block rounded-top position-relative text-center">
+                            <span class="fw-700 fs-18 txt-purple rounded-top">عروض اليوم</span>
                         </div>
                         <div class="bg-purple rounded-bottom shadow-sm side-scroll">
                             <div class="gutters-5 lg-no-gutters row row-cols-2 row-cols-lg-1">
@@ -413,7 +413,7 @@
                                                         <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المقارنة">
                                                         <i class="fas fa-sync"></i>
                                                     </a>
-                                                    <a href="javascript:void(0)" class="my-cart-btn" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="img/download.jpg">
+                                                    <a href="javascript:void(0)" class="my-cart-btn" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة" data-id="1" data-name="ساعة ذكية" data-summary="summary 1" data-price="10" data-quantity="1" data-image="img/download.jpg">
                                                         <i class="fas fa-shopping-cart"></i>
                                                     </a>
                                                 </div>                                            
@@ -450,6 +450,17 @@
                                         <a href="#" class="d-block" tabindex="0">
                                             <img class="img-fit mx-auto h-140px h-md-210px" src="https://ajeebghareeb.com/uploads/all/RTy66ryvzKuEcKI0J5hU2AsKepKMXib7F0fKSytJ.webp">
                                         </a>
+                                        <div class="absolute-top-right my-p-hov-icon d-none d-md-block">
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المفضلة">
+                                                <i class="fas fa-heart"></i>
+                                            </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المقارنة">
+                                                <i class="fas fa-sync"></i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="my-cart-btn" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة" data-id="2" data-name="ساعة ذكية 2" data-summary="summary 2" data-price="26" data-quantity="1" data-image="img/download.jpg">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div> 
                                         <span style="position: absolute; left: auto; right: 0px; top: 0px; background: #c54141; color: #fff; padding: 0 10px; border-radius: 4px 0px 0px 10px;font-size: 14px;font-weight: 700;">
                                             الخصم 20 % 2
                                         </span>
@@ -483,6 +494,17 @@
                                         <a href="#" class="d-block" tabindex="0">
                                             <img class="img-fit mx-auto h-140px h-md-210px" src="https://ajeebghareeb.com/uploads/all/RTy66ryvzKuEcKI0J5hU2AsKepKMXib7F0fKSytJ.webp">
                                         </a>
+                                        <div class="absolute-top-right my-p-hov-icon d-none d-md-block">
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المفضلة">
+                                                <i class="fas fa-heart"></i>
+                                            </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left" title="إضافة إلى المقارنة">
+                                                <i class="fas fa-sync"></i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="my-cart-btn" data-toggle="tooltip" data-placement="left" title="إضافة إلى السلة" data-id="3" data-name="ساعة ذكية 3" data-summary="summary 3" data-price="125" data-quantity="1" data-image="img/download.jpg">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div> 
                                         <span style="position: absolute; left: auto; right: 0px; top: 0px; background: #c54141; color: #fff; padding: 0 10px; border-radius: 4px 0px 0px 10px;font-size: 14px;font-weight: 700;">
                                             الخصم 20 % 3
                                         </span>
@@ -881,7 +903,6 @@
                         <div class="text-center">
                             <ul class="list-inline mb-0" style="display: flex;justify-content: center;">
                                 <li style="margin: 0 5px;display: grid;">
-                                    <img src="https://ajeebghareeb.com/assets/img/maroof.webp" height="50" alt="رقم معروف:: 62837" title="رقم معروف:: 62837">
                                     <span>Here goes text</span>
                                 </li>
                             </ul>
@@ -943,15 +964,8 @@
 
         var goToCartIcon = function($addTocartBtn){
         var $cartIcon = $(".my-cart-icon");
-        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
-        $addTocartBtn.prepend($image);
-        var position = $cartIcon.position();
-        $image.animate({
-            top: position.top,
-            left: position.left
-        }, 500 , "linear", function() {
-            $image.remove();
-        });
+        
+        
         }
 
         $('.my-cart-btn').myCart({
