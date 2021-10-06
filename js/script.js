@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+
+
     $('#m-search').click(function() {
         $('.search-form-wrapper').removeClass('d-none');
         $('.search-form-wrapper').toggleClass('d-block');
@@ -49,6 +52,34 @@ $( document ).ready(function() {
         
     });
 
+    $('.related-products-slider').owlCarousel({
+        rtl:true,
+        loop:true,
+        nav:true,
+        items: 3,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause:true,
+        autoplayTimeout: 3000,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2, 
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 2,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 3,
+            },
+            1000: {
+                items: 3,
+            }
+        }
+        
+    });
 
     $('.menuButO').click(function() {
         // $('.sidenav').css({"width": "70%", "height": "100%"});
@@ -85,11 +116,28 @@ $( document ).ready(function() {
     });
 
 
-
+    $(document).ready(function(){
+        $('.count').prop('disabled', true);
+           $(document).on('click','.plus',function(){
+            $('.count').val(parseInt($('.count').val()) + 1 );
+        });
+        $(document).on('click','.minus',function(){
+            $('.count').val(parseInt($('.count').val()) - 1 );
+                if ($('.count').val() == 0) {
+                    $('.count').val(1);
+                }
+            });
+     });
 
 
     
-
+     vanillaZoom.init('#my-gallery');
 
 
     });
+
+
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
