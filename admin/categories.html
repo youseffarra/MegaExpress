@@ -1,0 +1,235 @@
+<!-- HEADER START -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Mega Express | ADMIN PANEL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style/image-uploader.min.css">
+</head>
+<body class="bg-light">
+
+<!--Side nav-->
+<div class="sidenav bg-light d-none d-lg-none shadow-sm border-left">
+    <div class="text-right">
+        <i class="fas fa-times menuCloseBut"></i>
+    </div>
+    <div class="text-center">
+        <a class="d-block mr-3 ml-0" href="#">
+            <img src="../img/logo.png" alt="" class="" width="80">
+        </a>
+    </div>
+    
+    <div class="rounded">
+        <ul class="list-unstyled categories py-2 mb-0 text-right">
+            <li class="category-nav-element-sideM">
+                <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                    <i class="fas fa-home mr-1 ml-1 icon-rounded"></i>
+                    <span class="cat-name">الرئيسية</span>
+                </a>
+            </li>
+            <li class="category-nav-element-sideM">
+                <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                    <i class="fas fa-shopping-cart mr-1 ml-1 icon-rounded"></i>
+                    <span class="cat-name">المنتجات</span>
+                </a>
+            </li>
+            <li class="category-nav-element-sideM">
+                <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                    <i class="fas fa-file-invoice mr-1 ml-1 icon-rounded"></i>
+                    <span class="cat-name">الفواتير</span>
+                </a>
+            </li>
+            <li class="category-nav-element-sideM">
+                <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                    <i class="fas fa-ad mr-1 ml-1 icon-rounded"></i>
+                    <span class="cat-name">المُروجين</span>
+                </a>
+            </li>
+            <li class="category-nav-element-sideM">
+                <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                    <i class="fas fa-info mr-1 ml-1 icon-rounded"></i>
+                    <span class="cat-name">حول الموقع</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Top Navbar -->
+<div class="navbar-top d-lg-block border-bottom bg-purple">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-7 text-right d-none d-lg-block">
+                <ul class="list-inline mb-0">
+                    <div class="list-inline-item"><a href="#" class="py-2 d-inline-block"><i class="fas fa-home"></i> الرئيسية</a></div>
+                    <div class="list-inline-item"><a href="#" class="py-2 d-inline-block"><i class="fas fa-shopping-cart"></i> المنتجات</a></div>
+                    <div class="list-inline-item"><a href="#" class="py-2 d-inline-block"><i class="fas fa-file-invoice"></i> الفواتير</a></div>
+                    <div class="list-inline-item mrl-05"><a href="#" class="py-2 d-inline-block"><i class="fas fa-ad"></i> المُروجين</a></div>
+                </ul>
+            </div>
+
+            <div class="col-lg-5 d-lg-block text-center">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="py-2 d-inline-block">الموقع الرئيسي</a></li>
+                    <li class="list-inline-item"><a href="#" class="py-2 d-inline-block">الإنذارات</a></li>
+                    <li class="list-inline-item"><a href="#" class="py-2 d-inline-block">الإعدادات</a></li>
+                    <li class="list-inline-item"><a href="#" class="py-2 d-inline-block">تسجيل الخروج</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Top Navbar end -->
+<header class="sticky-top z-1020 bg-white border-bottom shadow-sm d-xl-none d-lg-none">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="d-flex align-items-center col-lg-3 col-xs-6">
+                <div class="col-auto col-xl-3 d-flex align-items-center mt-3 mb-3">
+                    <i class="fas fa-bars d-xl-none d-lg-none menuButO"></i>
+                </div>
+            </div>
+        </div>   
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row py-3">
+        <div id="sidenavst" class="col-3 d-none d-lg-block">
+        <!-- Side menu -->
+            <div class="sticky-top z-1010">
+                <ul class="list-unstyled categories py-2 mb-0 text-right">
+                    <li class="category-nav-element-sideM">
+                        <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                            <i class="fas fa-home mr-1 ml-1 icon-rounded"></i>
+                            <span class="cat-name">الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="category-nav-element-sideM">
+                        <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                            <i class="fas fa-shopping-cart mr-1 ml-1 icon-rounded"></i>
+                            <span class="cat-name">المنتجات</span>
+                        </a>
+                    </li>
+                    <li class="category-nav-element-sideM">
+                        <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                            <i class="fas fa-file-invoice mr-1 ml-1 icon-rounded"></i>
+                            <span class="cat-name">الفواتير</span>
+                        </a>
+                    </li>
+                    <li class="category-nav-element-sideM">
+                        <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                            <i class="fas fa-ad mr-1 ml-1 icon-rounded"></i>
+                            <span class="cat-name">المُروجين</span>
+                        </a>
+                    </li>
+                    <li class="category-nav-element-sideM">
+                        <a href="#" class="text-truncate text-reset py-2 px-3 d-block hvr-glow">
+                            <i class="fas fa-info mr-1 ml-1 icon-rounded"></i>
+                            <span class="cat-name">حول الموقع</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- HEADER END -->
+
+
+        <div id="main" class="col text-center mt-2">
+                <!-- 1st section -->
+                <section class="bg-white rounded mb-5 p-4 shadow-sm">
+                    <header class="text-right">
+                        <div class="d-flex mb-3 align-items-baseline border-bottom">
+                            <h3 class="h5 fw-700 mb-0">
+                                <span class="border-bottom border-purple border-width-2 pb-3 d-inline-block"><i class="fas fa-th-list icon-rounded f-17"></i> إضافة فئات</span>
+                            </h3>
+                        </div>
+                    </header>
+                    <main>
+                        <div class="main-form">
+                            <form class="admin-form" action="" method="POST" autocomplete="off" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-lg-6 divider-left">
+                                        <div class="form-group col-lg-12">
+                                            <input type="text" id="name" class="form-control" placeholder="اسم الفئة">
+                                        </div>
+                                        <div class="form-group col-lg-12">
+                                            <textarea class="form-control max-min-h-500" name="" id="" cols="30" rows="10" placeholder="وصف الفئة"></textarea>
+                                        </div>
+                                        <div class="form-group col-lg-12">
+                                            <div class="input-images">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img class="img-fluid rounded-top" width="300" src="img/preview.png" alt="">
+                                        <div class="border border-purple p-2" style="width: 300px; margin: 0 auto;">
+                                            <h4>Name goes here</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora esse quae optio beatae facilis incidunt distinctio et, voluptas neque tenetur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mt-2">
+                                        <button type="submit" class="btn btn-block bg-purple text-white">إضافة</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </main>
+                </section>
+                
+        </div>
+           
+    </div><!-- row div -->
+</div><!-- container div -->
+
+
+
+
+
+
+
+
+    <!-- FOOTER START -->
+    <section class="py-2 text-light" style="background-color: #3b3e44">
+        <div class="text-center p-4">
+            جميع الحقوق محفوظة
+            <br><img src="../img/logo.png" class="img-fluid mt-3 bg-white p-3 rounded mb-0" width="100" alt="">
+        </div>
+    </section>
+        
+
+        
+
+
+        
+    <i id="goToTop" class="fas fa-angle-up goToTop"></i>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/image-uploader.min.js"></script>
+    <script>
+        let map =  ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩',' ','-','/','|','~','٫'];
+        
+        function change(el){
+            el.value = el.value.replace(/\d/g, function(match){
+                return map[match]
+            })
+            
+        }
+    </script>
+</body>
+</html>
+<!-- FOOTER END -->
